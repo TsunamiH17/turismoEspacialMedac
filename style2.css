@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+    --neon-blue: #412DE5; /* Azul neón */
+    --dark-blue: #1a0f80; /* Azul oscuro */
+    --light-blue: #8c7cf0; /* Azul claro */
+    --bg-dark: rgba(0, 0, 0, 0.85); /* Fondo oscuro más opaco */
+    --highlight-color: #1a0f80; /* Color de resaltado */
+    --border-radius: 12px; /* Radio de borde ajustado */
+    --glow-intensity: 12px; /* Intensidad del resplandor */
+   
+}
+
+body {
+    background: url('img/space.login.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+
+.w-100 {
+    width: 100%; /* Cambia el ancho a 100% para el formulario */
+}
+
+.w-35 {
+    width: calc(33.33% - 10px); /* Cambia el ancho de las tarjetas para que quepan en la línea */
+    margin: 5px; /* Añade margen entre las tarjetas */
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.header {
+    color: #fff;
+    text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--light-blue);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px var(--neon-blue);
+    margin-bottom: 20px;
+}
+
+.bg-custom-1 {
+    background-color: var(--custom-bg-1);
+}
+
+.bg-custom-2 {
+    background-color: var(--custom-bg-2);
+}
+
+h1 {
+    padding-top: 1em;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 var(--glow-intensity) var(--neon-blue),
+                 0 0 25px var(--light-blue),
+                 0 0 40px var(--dark-blue);
+    margin: 20px 0;
+    animation: pulse 1.5s infinite alternate;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 3rem; /* Tamaño ajustado para un mejor diseño */
+    color: #fff; /* Letras en blanco */
+}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 15px;
+    color: #fff; /* Letras en blanco */
+    text-shadow: none;
+    background-color: transparent;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid var(--neon-blue);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-dark);
+    color: #fff; 
+    font-size: 1.1rem;
+    box-shadow: 0 0 8px var(--dark-blue), 0 0 15px var(--light-blue);
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: var(--light-blue);
+    box-shadow: 0 0 15px var(--light-blue), 0 0 25px var(--neon-blue);
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--neon-blue);
+    color: #fff; /* Texto en blanco */
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 8px var(--dark-blue), 0 0 15px var(--light-blue);
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: var(--neon-blue);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--light-blue), 0 0 40px var(--neon-blue);
+}
+
+.resultado {
+    font-size: 1.6rem;
+    margin-top: 25px;
+    color: #fff; /* Texto en blanco */
+    text-shadow: none; /* Sin efecto de sombra */
+    animation: glowEffect 1.5s infinite alternate;
+}
+.container {
+    backdrop-filter: blur(15px); /* Efecto de desenfoque en el fondo */
+    padding: 2em; /* Espaciado interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+h3 {
+    color: #fff; /* Texto en blanco */
+    text-shadow: none;
+}
+
+.card-body {
+    background-color: transparent;
+}
+
+.card-title {
+    color: #fff; /* Texto en blanco */
+    text-shadow: none;
+}
+
+.card-text {
+    color: #000000; /* Texto en blanco */
+    text-shadow: none;
+}
+
+h1, h2, h3, label, .card-title, .card-text, button, .resultado {
+    text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--light-blue), 0 0 15px var(--dark-blue);
+}
+
+h1, h2, h3, .card-title, .btn {
+    text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--light-blue);
+}
+
+
+.neon-button {
+    background-color: transparent;
+    border: 2px solid var(--neon-blue);
+    color: #fff; /* Texto en blanco */
+    padding: 12px 25px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.neon-button:hover {
+    background-color: var(--neon-blue);
+    box-shadow: 0 0 20px var(--light-blue), 0 0 40px var(--neon-blue);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    from {
+        text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--light-blue);
+    }
+    to {
+        text-shadow: 0 0 15px var(--light-blue), 0 0 30px var(--neon-blue);
+    }
+}
+
+@keyframes glowEffect {
+    from {
+        text-shadow: 0 0 8px var(--neon-blue);
+    }
+    to {
+        text-shadow: 0 0 16px var(--light-blue), 0 0 25px var(--neon-blue);
+    }
+}
