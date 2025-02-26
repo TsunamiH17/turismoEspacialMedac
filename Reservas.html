@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Agencia Espacial</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="text-white text-center py-4">
+<!-- Menú de navegación fijo -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="Reservas.html"><strong>CHAP SPACE</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Usuarios.html">Panel de Usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Reservas.html">Reservas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Gestiondestino.html">Gestión de Destino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Historial.html">Historial de Viajes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+        <h1 class="text-neon">Reservas de Viajes Espaciales</h1>
+    </header>
+
+    <div class="container my-4">
+        <section id="formulario-reserva" class="w-100 p-4 bg-custom-1">
+            <h2 class="text-center text-white">Reserva tu viaje</h2>
+            <form id="reservaForm" class="p-4 border rounded bg-dark-translucent">
+                <div class="mb-3">
+                    <label for="destino" class="form-label">Destino:</label>
+                    <select id="destino" name="destino" class="form-select">
+                        <option value="marte">Marte</option>
+                        <option value="titan">Titán</option>
+                        <option value="proxima">Próxima Centauri b</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha de salida:</label>
+                    <input type="date" id="fecha" name="fecha" class="form-control" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="pasajeros" class="form-label">Número de pasajeros:</label>
+                    <input type="number" id="pasajeros" name="pasajeros" min="1" max="10" class="form-control" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100 neon-button">Reservar</button>
+            </form>
+        </section>
+        
+        <section id="ofertas-destinos" class="w-100 d-flex flex-wrap justify-content-between p-4 bg-custom-2">
+            <h2 class="text-center text-white w-100">Ofertas Especiales(-30%)</h2>
+            <div class="card neon-card mb-3 bg-dark-translucent w-35">
+                <img src="img/marte.jpg" class="card-img-top" alt="Marte">
+                <div class="card-body">
+                    <h3 class="card-title">Escapada a Marte</h3>
+                    <p class="card-text">Disfruta de una estancia en la estación orbital Olympus.</p>
+                    <button class="btn btn-secondary neon-button">Ver más</button>
+                </div>
+            </div>
+            <div class="card neon-card mb-3 bg-dark-translucent w-35">
+                <img src="img/titan.jpg" class="card-img-top" alt="Titán">
+                <div class="card-body">
+                    <h3 class="card-title">Aventura en Titán</h3>
+                    <p class="card-text">Explora los mares de metano en una excursión inolvidable.</p>
+                    <button class="btn btn-secondary neon-button">Ver más</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="text-center mt-3">
+        <button id="logoutButton" class="btn btn-primary neon-button">Cerrar sesión</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/reservas.js"></script> <!-- Asegúrate de que este archivo contenga tu código JS -->
+</body>
+</html>
