@@ -1,0 +1,61 @@
+:root {
+    --neon-blue: #412DE5;
+    --dark-blue: #1a0f80;
+    --light-blue: #8c7cf0;
+    --bg-dark: rgba(0, 0, 0, 0.7);
+}
+
+body {
+    background: url('img/space.login.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Texto con efecto neón */
+.text-neon {
+    color: var(--neon-blue);
+    text-shadow: 0 0 5px var(--dark-blue), 0 0 10px var(--light-blue);
+}
+
+/* Inputs con Bootstrap y efectos CSS3 */
+.form-control {
+    background-color: var(--bg-dark);
+    border: 1px solid var(--neon-blue);
+    color: var(--light-blue);
+    box-shadow: 0 0 5px var(--dark-blue);
+}
+
+.form-control:focus {
+    border-color: var(--light-blue);
+    box-shadow: 0 0 10px var(--light-blue);
+}
+
+/* Botón con efecto neón */
+.btn-neon {
+    color: white;
+    background-color: transparent;
+    border: 2px solid var(--neon-blue);
+    box-shadow: 0 0 5px var(--dark-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-neon:hover {
+    background-color: var(--neon-blue);
+    color: #fff;
+    box-shadow: 0 0 15px var(--light-blue);
+}
+
+/* Alertas con fondo opaco */
+.alert {
+    background-color: rgba(25, 15, 112, 0.9);
+    color: var(--light-blue);
+    border: 1px solid var(--neon-blue);
+    text-align: center;
+    font-weight: bold;
+}
+.form-text {
+    color: #412DE5 !important; /* Azul oscuro */
+    font-weight: 500; /* Negrita media */
+    text-shadow: 0 0 3px rgba(65, 45, 229, 0.5); /* Sombra ligera */
+}

@@ -1,0 +1,122 @@
+:root {
+    --neon-blue: #412DE5; /* Azul neón */
+    --dark-blue: #1a0f80; /* Azul oscuro */
+    --light-blue: #8c7cf0; /* Azul claro */
+    --bg-dark: rgba(0, 0, 0, 0.8); /* Fondo oscuro más opaco */
+    --highlight-color: #1a0f80; /* Color de resaltado */
+    --border-radius: 8px; /* Radio de borde */
+}
+
+body {
+    background: url('img/space.login.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Color del texto */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+h2, h3 {
+    text-align: center; /* Centra los títulos */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.text-neon {
+    color: #ffffff; /* Color del texto blanco */
+    text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue); /* Sombra de texto azul neón */
+}
+
+.neon-input {
+    border: 1px solid var(--neon-blue); /* Borde azul neón */
+    box-shadow: 0 0 5px var(--dark-blue), 0 0 10px var(--light-blue); /* Sombra */
+    background-color: var(--bg-dark); /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+}
+
+.neon-button {
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid var(--neon-blue); /* Borde azul neón */
+    box-shadow: 0 0 5px var(--dark-blue), 0 0 10px var(--light-blue); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.2s; /* Efecto de transición */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+}
+
+.neon-button:hover {
+    background-color: var(--neon-blue); /* Fondo azul neón en hover */
+    transform: scale(1.05); /* Efecto de aumento en hover */
+}
+
+.neon-list .neon-item {
+    background-color: transparent; /* Sin fondo para los elementos de la lista */
+    color: #ffffff; /* Texto blanco */
+    border: 1px solid transparent; /* Sin borde para un efecto limpio */
+    box-shadow: 0 0 5px var(--dark-blue), 0 0 10px var(--light-blue); /* Sombra */
+    margin-bottom: 1em; /* Espaciado entre elementos */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    transition: transform 0.2s; /* Efecto de transición */
+}
+
+.neon-list .neon-item:hover {
+    transform: scale(1.02); /* Efecto de aumento en hover */
+}
+
+.img-thumbnail {
+    max-width: 100px; /* Ancho máximo de la imagen aumentado */
+    margin-right: 15px; /* Espacio a la derecha */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+}
+
+.trip-details, .notification-details, .news-details, .suggestion-details {
+    color: #ffffff; /* Texto blanco */
+}
+
+.help-details, .payment-details {
+    color: #ffffff; /* Texto blanco */
+}
+
+.help-details {
+    text-align: justify; /* Justifica el texto */
+}
+
+.payment-methods .img-thumbnail {
+    max-width: 4em; /* Ancho máximo de la imagen */
+    margin-right: 0.5em; /* Espacio a la derecha */
+}
+
+.container {
+    backdrop-filter: blur(15px); /* Efecto de desenfoque en el fondo */
+    padding: 2em; /* Espaciado interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+.btn-primary {
+    background-color: var(--highlight-color); /* Color del botón de logout */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.btn-primary:hover {
+    background-color: var(--light-blue); /* Color al pasar el mouse */
+}
+
+/* Estilo para el pie de página */
+footer {
+    margin-top: 40px; /* Espaciado superior */
+    text-align: center; /* Centra el texto */
+    color: #ffffff; /* Color del texto */
+}
+.payment-methods {
+    display: flex; /* Usar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.payment-methods .img-thumbnail {
+    max-width: 60px; /* Ancho máximo de la imagen ajustado */
+    margin: 0 10px; /* Espacio horizontal alrededor de las imágenes */
+}

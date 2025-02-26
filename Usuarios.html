@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario - Viajes Espaciales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+<!-- Menú de navegación fijo -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="Reservas.html"><strong>CHAP SPACE</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Usuarios.html">Panel de Usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Reservas.html">Reservas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Gestiondestino.html">Gestión de Destino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Historial.html">Historial de Viajes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    <div class="container mt-5">
+        <h2 class="text-center text-neon">Panel de Usuario</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h3 class="text-neon">Resumen de Viajes Reservados</h3>
+                <p class="summary-details">Aquí puedes ver un resumen de tus viajes espaciales reservados, incluyendo detalles sobre fechas, precios y descripciones de cada viaje.</p>
+                <ul class="list-group neon-list">
+                    <li class="list-group-item neon-item d-flex align-items-center">
+                        <img src="img/space1.jpg" alt="Vuelo a Marte" class="img-thumbnail me-3">
+                        <div>
+                            <strong>Vuelo a Marte</strong> - <em>15 Marzo 2323</em>
+                            <p class="trip-details">Duración: <strong>3 días</strong> | Precio: <strong>$500,000</strong></p>
+                            <p class="trip-details">Descripción: Disfruta de una experiencia única en Marte, explorando sus paisajes y asentamientos humanos.</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item neon-item d-flex align-items-center">
+                        <img src="img/space2.jpg" alt="Estación Orbital Luna" class="img-thumbnail me-3">
+                        <div>
+                            <strong>Estación Orbital Luna</strong> - <em>23 Abril 2323</em>
+                            <p class="trip-details">Duración: <strong>2 días</strong> | Precio: <strong>$300,000</strong></p>
+                            <p class="trip-details">Pasa dos días en una estación orbital alrededor de la Luna, disfrutando de vistas impresionantes y actividades de exploración lunar.</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item neon-item d-flex align-items-center">
+                        <img src="img/space3.avif" alt="Excursión a Kepler-452b" class="img-thumbnail me-3">
+                        <div>
+                            <strong>Excursión a Kepler-452b</strong> - <em>5 Mayo 2323</em>
+                            <p class="trip-details">Duración: <strong>5 días</strong> | Precio: <strong>$1,000,000</strong></p>
+                            <p class="trip-details">Explora el exoplaneta Kepler-452b en una excursión de cinco días, con actividades de investigación científica y exploración de su entorno.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3 class="text-neon">Notificaciones</h3>
+                <p class="notification-summary">Aquí puedes ver las notificaciones importantes relacionadas con tus viajes, incluidas ofertas y recordatorios.</p>
+                <ul class="list-group neon-list">
+                    <li class="list-group-item neon-item d-flex align-items-center">
+                        <img src="img/cohete.jpg" alt="Recordatorio Check-in" class="img-thumbnail me-3">
+                        <div>
+                            <strong>Recordatorio:</strong> Check-in para vuelo a Marte
+                            <p class="notification-details">Fecha límite: <strong>14 Marzo 2323</strong>. Asegúrate de realizar tu check-in para garantizar tu asiento.</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item neon-item d-flex align-items-center">
+                        <img src="img/cohete1.jpg" alt="Oferta especial" class="img-thumbnail me-3">
+                        <div>
+                            <strong>Oferta especial:</strong> 20% de descuento en excursiones exoplanetarias
+                            <p class="notification-details">Válido hasta: <strong>30 Abril 2323</strong>. No te pierdas esta oportunidad para explorar nuevos mundos a un precio reducido.</p>
+                        </div>
+                    </li>
+                </ul>
+                <h3 class="mt-3 text-neon">Últimas Noticias</h3>
+                <p class="news-summary">Mantente informado sobre las últimas noticias en el mundo de los viajes espaciales.</p>
+                <ul class="list-group neon-list">
+                    <li class="list-group-item neon-item d-flex align-items-center">
+                        <img src="img/cohete2.webp" alt="Nuevas rutas interplanetarias" class="img-thumbnail me-3">
+                        <div>
+                            <strong>Nuevas rutas interplanetarias disponibles</strong>
+                            <p class="news-details">A partir de <strong>Junio 2323</strong>, se abrirán nuevas rutas hacia Proxima Centauri b, ampliando tus opciones de viaje.</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item neon-item d-flex align-items-center">
+                        <img src="img/space5.jpg" alt="Actualización de políticas de equipaje" class="img-thumbnail me-3">
+                        <div>
+                            <strong>Actualización de políticas de equipaje para vuelos espaciales</strong>
+                            <p class="news-details">Ahora se permite llevar hasta <strong>50kg de equipaje</strong> por pasajero, lo que facilita la preparación para tus aventuras espaciales.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6 mb-4">
+                <h3 class="text-neon">Sugerencias de Viajes</h3>
+                <p class="suggestions-summary">Explora nuestras recomendaciones personalizadas para futuras aventuras en el espacio.</p>
+                <ul class="list-group neon-list">
+                    <li class="list-group-item neon-item d-flex align-items-center">
+                        <img src="img/space6.jpg" alt="Viaje a Saturno" class="img-thumbnail me-3">
+                        <div>
+                            <strong>Viaje a Saturno</strong>
+                            <p class="suggestion-details">Duración: <strong>7 días</strong> | Precio: <strong>$1,500,000</strong></p>
+                            <p class="suggestion-details">Explora los anillos de Saturno en un viaje inolvidable lleno de descubrimientos y vistas espectaculares.</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item neon-item d-flex align-items-center">
+                        <img src="img/space7.jpg" alt="Estación Espacial Internacional" class="img-thumbnail me-3">
+                        <div>
+                            <strong>Estación Espacial Internacional</strong>
+                            <p class="suggestion-details">Duración: <strong>10 días</strong> | Precio: <strong>$2,000,000</strong></p>
+                            <p class="suggestion-details">Vive una experiencia única en la Estación Espacial Internacional, participando en actividades científicas y disfrutando de la vida en el espacio.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h3 class="text-neon">Centro de Ayuda</h3>
+                <p class="help-details">¿Tienes alguna duda o necesitas asistencia? Nuestro equipo de soporte está disponible <strong>las 24 horas del día, los 365 días de año</strong> para ayudarte. Puedes contactarnos a través del correo <a href="mailto:chapgamessoporte@viajesespaciales.com" class="text-neon">chapgamessoporte@viajesespaciales.com</a> o llamando al número <a href="tel:920345682" class="text-neon">920345682</a>.</p>
+                <h3 class="text-neon mt-3">Opciones de Pago</h3>
+                <p class="payment-details">Aceptamos las siguientes formas de pago para facilitar tus reservas:</p>
+                <ul class="payment-methods list-inline">
+                    <li class="list-inline-item"><img src="img/visa.png" alt="Visa" class="img-thumbnail"></li>
+                    <li class="list-inline-item"><img src="img/mastercard.png" alt="MasterCard" class="img-thumbnail"></li>
+                    <li class="list-inline-item"><img src="img/americanexpress.png" alt="American Express" class="img-thumbnail"></li>
+                    <li class="list-inline-item"><img src="img/paypal.png" alt="PayPal" class="img-thumbnail"></li>
+                </ul>
+            </div>
+        </div>
+        <button id="logoutButton" class="btn btn-primary mt-3 neon-button">Cerrar sesión</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/user1.js"></script>
+</body>
+
+</html>
+
+
