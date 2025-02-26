@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Viajes y Opiniones - Agencia Espacial</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="text-white text-center py-4">
+        <!-- Menú de navegación fijo -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Reservas.html"><strong>CHAP SPACE</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Usuarios.html">Panel de Usuario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gestiondestino.html">Gestión de Destino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Historial.html">Historial de Viajes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="text-neon">Historial de Viajes y Opiniones</h1>
+    </header>
+
+    <div class="container my-4" style="margin-top: 80px;"> <!-- Ajusta el margen superior para que no se superponga con el navbar -->
+        <section id="historial-viajes" class="w-100 p-4 bg-custom-1">
+            <h2 class="text-center text-white">Tus Viajes</h2>
+            <div class="list-group mb-4">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1">Viaje a Marte</h5>
+                    <p class="mb-1">Fecha: 15 de enero de 2025</p>
+                    <small>Calificación: ★★★★☆</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1">Viaje a la Luna</h5>
+                    <p class="mb-1">Fecha: 10 de diciembre de 2024</p>
+                    <small>Calificación: ★★★★★</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1">Viaje a Titán</h5>
+                    <p class="mb-1">Fecha: 5 de noviembre de 2024</p>
+                    <small>Calificación: ★★★☆☆</small>
+                </a>
+            </div>
+        </section>
+
+        <section id="dejar-opinion" class="w-100 p-4 bg-custom-2">
+            <h2 class="text-center text-white">Deja tu Opinión</h2>
+            <form id="opinionForm"> <!-- Asegúrate de que el ID coincida con el JavaScript -->
+                <div class="form-group">
+                    <label for="travelDestination">Destino del viaje</label>
+                    <input type="text" class="form-control" id="travelDestination" placeholder="Ejemplo: Marte" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Calificación</label>
+                    <select class="form-control" id="rating" required>
+                        <option value="">Selecciona una calificación</option>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comentario</label>
+                    <textarea class="form-control" id="comment" rows="3" placeholder="Escribe tu comentario aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Opinión</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="text-center mt-3">
+        <button id="logoutButton" class="btn btn-primary neon-button">Cerrar sesión</button>
+    </div>
+
+    <script src="js/HISTORIAL.js"></script>
+</body>
+</html>
